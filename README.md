@@ -1,6 +1,6 @@
 # Exploratory Analysis of Wordle
 
-An exploratory analysis of the popular word game Wordle in Jupyter Notebooks. 
+An exploratory analysis of the popular word game Wordle in Python using Jupyter Notebooks. 
 
 ## Introduction
 
