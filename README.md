@@ -6,6 +6,7 @@ An exploratory analysis of the popular word game Wordle in Python using Jupyter 
 
 Whats wordle (created by, global phenomenon)
 Aspects
+the dataset
 
 ## Finding the Best Starter Word
 Matplotlib
