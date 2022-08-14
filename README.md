@@ -11,13 +11,14 @@ The game is simple. Players need to guess each day's mystery five-letter word, w
 According to the thousands who post their wordle scores to twitter each day, the aim of the game is not only guessing the mystery word, but guessing it in the least amount of attempts. One of the best ways to guess the mystery word in the fewest number of attempts is to have a solid starter word. Some people choose random starter words each time, some swear by their own starter word, but this investigation will aim to find the best wordle starter word using programming.
 
 ## Finding the Best Starter Word
-#### Backtesting 
+### Backtesting 
 One of the challenges of identifying the best starter word is the lack of a standardized metric to "score" them.  In order to 
 
-Letter Frequency Strategy
-Vowel Strategy
-Other Strategy
-Brute Force Strategy
+### Letter Frequency Strategy
+### Vowel Strategy
+### Brute Force Strategy
+
+### Extension
 
 ## Results
 From the results of the brute force strategy, the best wordle starter word was determined to be "TOEAS". Like you, I have never heard of this word before, but it refers to the "toea", a monetary unit of Papua New Guienea. Eliminates
