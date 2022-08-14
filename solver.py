@@ -1,76 +1,55 @@
-# Initializing variables and list
 guess = ""
 result = ""
-guess_list = []
+words = []
 
 
-# Appending wordle words to list
-try:
-    with open('wordle_words.txt') as f:
-        for line in f:
-            guess_list.append(line.strip())
-except FileNotFoundError:
-    print("Word List Is Not In This Directory")
+with open('list.txt') as f:
+    for line in f:
+        words.append(line.strip())
 
 
-# Instructions
-print("Type in a starter word of your choice")
-print("My analysis concluded that SOARE is the best starter word, but feel free to use your own.")
+print("Input a starter word of your choice. I recommend using SOARE, but feel free to use your own starter word.")
 
 
 for guesses in range(6):
-    
-    # Input 
+
     guess = input("\n\nWord: ").lower()
     
-    # Result
     print("What Result Did Wordle Give You?")
     print("$ = Green, * = Yellow, # = Grey")
     result = input("Results: ")
     
     
-    # Game over condition
+    # if solved
     if result == "$$$$$":
-        print("Mission Acomplished: Wordle in",guesses+1)
+        print("\n\nMission Acomplished: Wordle in", guesses+1)
         break
 
 
-    # Tuple Used As We Can't Iterate Over A Changing List
-    tuple_1 = tuple(guess_list)
-    for word in tuple_1:
+    tupleX = tuple(words)
+    for word in tupleX:
         for i in range(5):
 
-
-            #Logic 1: Remove From List If Word Has A Grey Letter
+            #Logic 1: remove from list if word has grey letter
             if result[i] == "#" and guess[i] in word:
-                guess_list.remove(word)
+                words.remove(word)
                 break
 
-
-            #Logic 2: Remove From List If Word Does Not Have Green In Correct Place
+            #Logic 2: remove from list if word goes not have green letter in correct place
             elif result[i] == "$" and guess[i] != word[i]:
-                guess_list.remove(word)
+                words.remove(word)
                 break
 
-
-            #Logic 3: Remove From List If Word Does Not Have Yellow Letter
+            #Logic 3: remove from list if word does not have yellow letter
             elif result[i] == "*" and guess[i] not in word:
-                guess_list.remove(word)
+                words.remove(word)
                 break
 
-
-            #Logic 4: Remove From List If Word Has Yellow Letter In Same Place 
-            elif result[i] == "y" and guess[i] == word[i]:
-                guess_list.remove(word)
+            #Logic 4: remove from list if word has yellow letter in same place
+            elif result[i] == "*" and guess[i] == word[i]:
+                words.remove(word)
                 break
 
-
-    #Only Prints Ten Words Per Line
-    counter = 0
-    print("\nThese Are A List Of Possible Words. Use Your Judgement To Select One.")
-    for word in guess_list:
-        print(word,end=", ")
-        counter+=1
-        if counter == 10:
-            print("")
-            counter = 0
+                
+    print("\nThese are a list of possible answers, use your judgement to select one.\n")
+    print(words)
