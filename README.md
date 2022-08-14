@@ -31,7 +31,7 @@ Logic rules
 
 ## Files
 
-- **analysis.py** Finding the best starter word
+- **analysis.ipynb** Finding the best starter word
 - **solver.py** Wordle solver
 - **list.txt** Word list
 - **packages.txt** Python packages needed to run this project
