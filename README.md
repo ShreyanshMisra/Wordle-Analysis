@@ -9,26 +9,29 @@ Aspects
 the dataset
 
 ## Finding the Best Starter Word
-Matplotlib
-etc.
-etc.
-etc.
+Backtesting 
+Letter Frequency Strategy
+Vowel Strategy
+Other Strategy
+Brute Force Strategy
 
 ## Results
 results - best word
+SOARE
 
 ## Creating a Solver
 
 Proccess of elimination
+
 Logic rules
-- Rule 1
-- Rule 2
-- Rule 3
-- Rule 4
+- remove from list if word has grey letter
+- remove from list if word goes not have green letter in correct place
+- remove from list if word does not have yellow letter
+- remove from list if word has yellow letter in same place
 
 ## Files
 
-- **analysis.py** Wordle Analysis
-- **solver.py** Wordle Solver
-- **word_list.txt** Wordle Word List
-- **packages.txt** Packages used
+- **analysis.py** Finding the best starter word
+- **solver.py** Wordle solver
+- **list.txt** Word list
+- **packages.txt** Python packages needed to run this project
