@@ -12,13 +12,42 @@ According to the thousands who post their wordle scores to twitter each day, the
 
 ## Finding the Best Starter Word
 ### Backtesting 
-One of the challenges of identifying the best starter word is the lack of a standardized metric to "score" them.  In order to 
+One of the challenges in identifying the best starter word is the lack of a standardized metric to "score" them. In order to solve this, I created a back-testing function that would quantitatively evaluate each word based on how many words from the dataset it eliminated. This method of back-testing involved using the least informing wordle result; all letters highlighted grey, meaning that they are not present in the mystery word.If we optimized a word to eliminate a large number of possible words in spite of providing the least informing result, then that word would become an effective starter word. Therefore, this back-tester calculates the percentage of words eliminated from the dataset if a specific starter word is used.
+
+PICTURES
+
+### Vowel Strategy
+The first strategy considered was the vowel strategy. All English words (with some exceptions) have a vowel in them, and therefore eliminating the maximum number of vowels in a starter word should theorietically remove a maximum number of words from the dataset.
+
+IMG1
+
+The vowels `a` and `e` were evidently more frequent that `i`, `o`, and `u`. In fact, having `e` in the starter word would immidiately eliminate over 50% of the words in the dataset.
+The best words according to the vowel stratey were `aurei` and `uraei` which both eliminated 95.35% of all possibilities. 
+
+IMG 2
 
 ### Letter Frequency Strategy
-### Vowel Strategy
+The letter frequency strategy was also attempted since while vowels were present in (almost) every single word, some consonants were more frequent. Therefore, eliminating those frequent consonants would result in a larger percentage of the dataset being eliminated.
+
+IMG 3
+
+The letters `s`, `e`, and `a` were evidently the most frequent in the dataset. I found it slightly surprising that `s` was the most common letter in this dataset, ahead of all the vowels. Upon further examination however, the reason for this is because a lot of five letter words are simply plurals of four letter words, and therefore end with an `s`. 
+
+BEST FREQ
+
 ### Brute Force Strategy
+The brute force strategy was also attempted since the back-testing function was optimized enough to run all 12,972 words through it and return their scores in a timely manner. Although I did not expect to find a more optimal starter word in comparison to the letter frequency strategy, I still attempted it to be sure. 
+
+SCREEN
+
+To my surprise, neither the vowel or letter frequency strategies yeilded the best results. The "best" wordle starter according to the brute force strategy is `toeas`, which eliminates 95.72% of all word possibilities. Using this word as a starter could narrow the dataset of 12,972 words to just 555 words or lower. We can therefore conclude that the best wordle starter word is `toeas`.
 
 ### Extension
+While `toeas` is certainly the best word to use in order to eliminate the maximum number of possible words, it will never be the final solution to a Wordle. This is because each Wordle's solution needs to be a word commonly used in the English language. Therefore, only 2,315 words out of the 12,900 can actually be the solution to the Wordle. For people who want to have a chance of guessing a Wordle on their first attempt, we would have to find a word that is both optimal and is present in the `answers` dataset. Seeing as brute force strategy yeilded the highest scoring words, I decided to use that again with the `answers` dataset. 
+
+SCREEN2
+
+The best possible answers are `uraei` and `aurei`, which were both the best words in the possible words dataset when using the vowel strategy. In all honesty, I am not familiar with the majority of the best possible answers, but according to Wordle, they are commonly used in the english language and could someday, be the "mystery wordle". 
 
 ## Results
 From the results of the brute force strategy, the best wordle starter word was determined to be "TOEAS". Like you, I have never heard of this word before, but it refers to the "toea", a monetary unit of Papua New Guienea. Eliminates
