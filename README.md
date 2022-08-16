@@ -25,7 +25,7 @@ The first strategy considered was the vowel strategy. All English words (with so
 The vowels `a` and `e` were evidently more frequent that `i`, `o`, and `u`. In fact, having `e` in the starter word would immidiately eliminate over 50% of the words in the dataset.
 The best words according to the vowel stratey were `aurei` and `uraei` which both eliminated 95.35% of all possibilities. 
 
-pp
+<img width="392" alt="bestFreq" src="https://user-images.githubusercontent.com/80748482/184859780-00207977-b312-49ab-9b31-d4ce12bbc476.png">
 
 ### Letter Frequency Strategy
 The letter frequency strategy was also attempted since while vowels were present in (almost) every single word, some consonants were more frequent. Therefore, eliminating those frequent consonants would result in a larger percentage of the dataset being eliminated.
@@ -34,7 +34,7 @@ The letter frequency strategy was also attempted since while vowels were present
 
 The letters `s`, `e`, and `a` were evidently the most frequent in the dataset. I found it slightly surprising that `s` was the most common letter in this dataset, ahead of all the vowels. Upon further examination however, the reason for this is because a lot of five letter words are simply plurals of four letter words, and therefore end with an `s`. 
 
-<img width="392" alt="bestFreq" src="https://user-images.githubusercontent.com/80748482/184859780-00207977-b312-49ab-9b31-d4ce12bbc476.png">
+
 
 ### Brute Force Strategy
 The brute force strategy was also attempted since the back-testing function was optimized enough to run all 12,972 words through it and return their scores in a timely manner. Although I did not expect to find a more optimal starter word in comparison to the letter frequency strategy, I still attempted it to be sure. 
