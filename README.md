@@ -78,3 +78,12 @@ Logic rules
 - Rickard, M., 2022. Wordle: What's the Best Starting Word?. [online] Matt-rickard.com. Available at: <https://matt-rickard.com/wordle-whats-the-best-starting-word> [Accessed 10 July 2022].
 - Sanderson, G., 2022. Solving Wordle using information theory. [online] YouTube. Available at: <https://www.youtube.com/watch?v=v68zYyaEmEA> [Accessed 14 July 2022].
 - Victor, D., 2022. Wordle Is a Love Story. The New York Times, [online] Available at: <https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html> [Accessed 14 July 2022].
+
+
+<img width="582" alt="backtest" src="https://user-images.githubusercontent.com/80748482/184859772-a5368157-4450-4006-9370-8520f0134d53.png">
+<img width="392" alt="bestFreq" src="https://user-images.githubusercontent.com/80748482/184859780-00207977-b312-49ab-9b31-d4ce12bbc476.png">
+<img width="399" alt="bestVowel" src="https://user-images.githubusercontent.com/80748482/184859786-892de0ab-dd25-4826-bb9b-3cfd5b29506d.png">
+<img width="937" alt="freqGraph" src="https://user-images.githubusercontent.com/80748482/184859792-76ba2a54-523c-40d2-bcbe-7315ce26e24c.png">
+<img width="1108" alt="screen1" src="https://user-images.githubusercontent.com/80748482/184859799-4bd6dd36-a366-4b49-8d68-9db70fa7824f.png">
+<img width="1102" alt="screen2" src="https://user-images.githubusercontent.com/80748482/184859805-e4f282aa-ee20-41a9-90ac-9621ba4e1807.png">
+<img width="947" alt="vowelGraph" src="https://user-images.githubusercontent.com/80748482/184859808-9e4e0a97-237b-4a10-a6d0-0b0f64e689d7.png">
