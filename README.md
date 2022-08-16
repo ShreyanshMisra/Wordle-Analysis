@@ -14,7 +14,7 @@ According to the thousands who post their wordle scores to twitter each day, the
 ### Backtesting 
 One of the challenges in identifying the best starter word is the lack of a standardized metric to "score" them. In order to solve this, I created a back-testing function that would quantitatively evaluate each word based on how many words from the dataset it eliminated. This method of back-testing involved using the least informing wordle result; all letters highlighted grey, meaning that they are not present in the mystery word.If we optimized a word to eliminate a large number of possible words in spite of providing the least informing result, then that word would become an effective starter word. Therefore, this back-tester calculates the percentage of words eliminated from the dataset if a specific starter word is used.
 
-![alt text](https://imgur.com/a/mWwJdRx.png)
+!(https://imgur.com/a/mWwJdRx)
 
 
 ### Vowel Strategy
