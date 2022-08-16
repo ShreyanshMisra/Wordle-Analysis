@@ -21,10 +21,11 @@ The first strategy considered was the vowel strategy. All English words (with so
 
 <img width="947" alt="vowelGraph" src="https://user-images.githubusercontent.com/80748482/184859808-9e4e0a97-237b-4a10-a6d0-0b0f64e689d7.png">
 
+
 The vowels `a` and `e` were evidently more frequent that `i`, `o`, and `u`. In fact, having `e` in the starter word would immidiately eliminate over 50% of the words in the dataset.
 The best words according to the vowel stratey were `aurei` and `uraei` which both eliminated 95.35% of all possibilities. 
 
-<img width="399" alt="bestVowel" src="https://user-images.githubusercontent.com/80748482/184859786-892de0ab-dd25-4826-bb9b-3cfd5b29506d.png">
+pp
 
 ### Letter Frequency Strategy
 The letter frequency strategy was also attempted since while vowels were present in (almost) every single word, some consonants were more frequent. Therefore, eliminating those frequent consonants would result in a larger percentage of the dataset being eliminated.
