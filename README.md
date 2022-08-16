@@ -12,7 +12,7 @@ According to the thousands who post their wordle scores to twitter each day, the
 
 ## Finding the Best Starter Word
 ### Backtesting 
-One of the challenges in identifying the best starter word is the lack of a standardized metric to "score" them. In order to solve this, I created a back-testing function that would quantitatively evaluate each word based on how many words from the dataset it eliminated. This method of back-testing involved using the least informing wordle result; all letters highlighted grey, meaning that they are not present in the mystery word.If we optimized a word to eliminate a large number of possible words in spite of providing the least informing result, then that word would become an effective starter word. Therefore, this back-tester calculates the percentage of words eliminated from the dataset if a specific starter word is used.
+One of the challenges in identifying the best starter word is the lack of a standardized metric to "score" them. In order to solve this, I created a back-testing function that would quantitatively evaluate each word based on how many words from the dataset it eliminated. This method of back-testing involved using the least informing wordle result; all letters highlighted grey, meaning that they are not present in the mystery word. If we optimized a word to eliminate a large number of possible words in spite of providing the least informing result, then that word would become an effective starter word. Therefore, this back-tester calculates the percentage of words eliminated from the dataset if a specific starter word is used.
 
 <img width="582" alt="backtest" src="https://user-images.githubusercontent.com/80748482/184859772-a5368157-4450-4006-9370-8520f0134d53.png">
 
