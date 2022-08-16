@@ -14,39 +14,38 @@ According to the thousands who post their wordle scores to twitter each day, the
 ### Backtesting 
 One of the challenges in identifying the best starter word is the lack of a standardized metric to "score" them. In order to solve this, I created a back-testing function that would quantitatively evaluate each word based on how many words from the dataset it eliminated. This method of back-testing involved using the least informing wordle result; all letters highlighted grey, meaning that they are not present in the mystery word.If we optimized a word to eliminate a large number of possible words in spite of providing the least informing result, then that word would become an effective starter word. Therefore, this back-tester calculates the percentage of words eliminated from the dataset if a specific starter word is used.
 
-ppp
-
+<img width="582" alt="backtest" src="https://user-images.githubusercontent.com/80748482/184859772-a5368157-4450-4006-9370-8520f0134d53.png">
 
 ### Vowel Strategy
 The first strategy considered was the vowel strategy. All English words (with some exceptions) have a vowel in them, and therefore eliminating the maximum number of vowels in a starter word should theorietically remove a maximum number of words from the dataset.
 
-IMG1
+<img width="947" alt="vowelGraph" src="https://user-images.githubusercontent.com/80748482/184859808-9e4e0a97-237b-4a10-a6d0-0b0f64e689d7.png">
 
 The vowels `a` and `e` were evidently more frequent that `i`, `o`, and `u`. In fact, having `e` in the starter word would immidiately eliminate over 50% of the words in the dataset.
 The best words according to the vowel stratey were `aurei` and `uraei` which both eliminated 95.35% of all possibilities. 
 
-IMG 2
+<img width="399" alt="bestVowel" src="https://user-images.githubusercontent.com/80748482/184859786-892de0ab-dd25-4826-bb9b-3cfd5b29506d.png">
 
 ### Letter Frequency Strategy
 The letter frequency strategy was also attempted since while vowels were present in (almost) every single word, some consonants were more frequent. Therefore, eliminating those frequent consonants would result in a larger percentage of the dataset being eliminated.
 
-IMG 3
+<img width="937" alt="freqGraph" src="https://user-images.githubusercontent.com/80748482/184859792-76ba2a54-523c-40d2-bcbe-7315ce26e24c.png">
 
 The letters `s`, `e`, and `a` were evidently the most frequent in the dataset. I found it slightly surprising that `s` was the most common letter in this dataset, ahead of all the vowels. Upon further examination however, the reason for this is because a lot of five letter words are simply plurals of four letter words, and therefore end with an `s`. 
 
-BEST FREQ
+<img width="392" alt="bestFreq" src="https://user-images.githubusercontent.com/80748482/184859780-00207977-b312-49ab-9b31-d4ce12bbc476.png">
 
 ### Brute Force Strategy
 The brute force strategy was also attempted since the back-testing function was optimized enough to run all 12,972 words through it and return their scores in a timely manner. Although I did not expect to find a more optimal starter word in comparison to the letter frequency strategy, I still attempted it to be sure. 
 
-SCREEN
+<img width="1108" alt="screen1" src="https://user-images.githubusercontent.com/80748482/184859799-4bd6dd36-a366-4b49-8d68-9db70fa7824f.png">
 
 To my surprise, neither the vowel or letter frequency strategies yeilded the best results. The "best" wordle starter according to the brute force strategy is `toeas`, which eliminates 95.72% of all word possibilities. Using this word as a starter could narrow the dataset of 12,972 words to just 555 words or lower. We can therefore conclude that the best wordle starter word is `toeas`.
 
 ### Extension
 While `toeas` is certainly the best word to use in order to eliminate the maximum number of possible words, it will never be the final solution to a Wordle. This is because each Wordle's solution needs to be a word commonly used in the English language. Therefore, only 2,315 words out of the 12,900 can actually be the solution to the Wordle. For people who want to have a chance of guessing a Wordle on their first attempt, we would have to find a word that is both optimal and is present in the `answers` dataset. Seeing as brute force strategy yeilded the highest scoring words, I decided to use that again with the `answers` dataset. 
 
-SCREEN2
+<img width="1102" alt="screen2" src="https://user-images.githubusercontent.com/80748482/184859805-e4f282aa-ee20-41a9-90ac-9621ba4e1807.png">
 
 The best possible answers are `uraei` and `aurei`, which were both the best words in the possible words dataset when using the vowel strategy. In all honesty, I am not familiar with the majority of the best possible answers, but according to Wordle, they are commonly used in the english language and could someday, be the "mystery wordle". 
 
@@ -78,12 +77,3 @@ Logic rules
 - Rickard, M., 2022. Wordle: What's the Best Starting Word?. [online] Matt-rickard.com. Available at: <https://matt-rickard.com/wordle-whats-the-best-starting-word> [Accessed 10 July 2022].
 - Sanderson, G., 2022. Solving Wordle using information theory. [online] YouTube. Available at: <https://www.youtube.com/watch?v=v68zYyaEmEA> [Accessed 14 July 2022].
 - Victor, D., 2022. Wordle Is a Love Story. The New York Times, [online] Available at: <https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html> [Accessed 14 July 2022].
-
-
-<img width="582" alt="backtest" src="https://user-images.githubusercontent.com/80748482/184859772-a5368157-4450-4006-9370-8520f0134d53.png">
-<img width="392" alt="bestFreq" src="https://user-images.githubusercontent.com/80748482/184859780-00207977-b312-49ab-9b31-d4ce12bbc476.png">
-<img width="399" alt="bestVowel" src="https://user-images.githubusercontent.com/80748482/184859786-892de0ab-dd25-4826-bb9b-3cfd5b29506d.png">
-<img width="937" alt="freqGraph" src="https://user-images.githubusercontent.com/80748482/184859792-76ba2a54-523c-40d2-bcbe-7315ce26e24c.png">
-<img width="1108" alt="screen1" src="https://user-images.githubusercontent.com/80748482/184859799-4bd6dd36-a366-4b49-8d68-9db70fa7824f.png">
-<img width="1102" alt="screen2" src="https://user-images.githubusercontent.com/80748482/184859805-e4f282aa-ee20-41a9-90ac-9621ba4e1807.png">
-<img width="947" alt="vowelGraph" src="https://user-images.githubusercontent.com/80748482/184859808-9e4e0a97-237b-4a10-a6d0-0b0f64e689d7.png">
