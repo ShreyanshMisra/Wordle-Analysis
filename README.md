@@ -34,6 +34,7 @@ The letter frequency strategy was also attempted since while vowels were present
 
 The letters `s`, `e`, and `a` were evidently the most frequent in the dataset. I found it slightly surprising that `s` was the most common letter in this dataset, ahead of all the vowels. Upon further examination however, the reason for this is because a lot of five letter words are simply plurals of four letter words, and therefore end with an `s`. 
 
+<img width="407" alt="Screen Shot 2022-08-16 at 3 05 57 PM" src="https://user-images.githubusercontent.com/80748482/184864868-e29a2f62-5d3c-4837-a0d6-edaaf07d5315.png">
 
 
 ### Brute Force Strategy
