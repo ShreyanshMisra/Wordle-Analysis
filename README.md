@@ -50,9 +50,7 @@ SCREEN2
 The best possible answers are `uraei` and `aurei`, which were both the best words in the possible words dataset when using the vowel strategy. In all honesty, I am not familiar with the majority of the best possible answers, but according to Wordle, they are commonly used in the english language and could someday, be the "mystery wordle". 
 
 ## Results
-From the results of the brute force strategy, the best wordle starter word was determined to be "TOEAS". Like you, I have never heard of this word before, but it refers to the "toea", a monetary unit of Papua New Guienea. Eliminates
-
-Now while guessing TOEAS will eliminate the number of possible guesses by 95.72%, it will more than likely never be the actual mystery word, meaning that this strategy makes it nearly impossible to guess the worlde on your first attempt. Guessing WWWWW on the other hand, gives you the possibility of guessing 
+From the results of the brute force strategy, the best wordle starter word was determined to be `TOEAS`. Like you, I have never heard of this word before, but it refers to the "toea", a monetary unit of Papua New Guienea. Now while guessing `TOEAS` will eliminate the number of possible guesses by 95.72%, it will more than likely never be the actual mystery word, meaning that this strategy makes it nearly impossible to guess the worlde on your first attempt. Guessing `uraei` or `aurei` on the other hand, gives you the possibility of guessing the Wordle on your first attempt and also eliminating 95.08% of all possible words.
 
 ## Creating a Solver
 
