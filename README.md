@@ -46,7 +46,7 @@ Logic rules
 
 ## References
 - Bakhtiari, B., 2022. A Frequency Analysis on Wordle. [online] Medium. Available at: <https://towardsdatascience.com/a-frequency-analysis-on-wordle-9c5778283363> [Accessed 10 July 2022].
-- Cruise, B., 2022. Wordle Valid Words. [online] Kaggle.com. Available at: <https://www.kaggle.com/datasets/bcruise/wordle-valid-words> [Accessed 1 July 2022].
+- Cruise, B., 2022. Wordle Valid Words. [online] Kaggle.com. Available at: <https://www.kaggle.com/datasets/bcruise/wordle-valid-words> [Accessed 11 July 2022].
 - Rickard, M., 2022. Wordle: What's the Best Starting Word?. [online] Matt-rickard.com. Available at: <https://matt-rickard.com/wordle-whats-the-best-starting-word> [Accessed 10 July 2022].
 - Sanderson, G., 2022. Solving Wordle using information theory. [online] YouTube. Available at: <https://www.youtube.com/watch?v=v68zYyaEmEA> [Accessed 14 July 2022].
 - Victor, D., 2022. Wordle Is a Love Story. The New York Times, [online] Available at: <https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html> [Accessed 14 July 2022].
