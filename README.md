@@ -56,14 +56,13 @@ From the results of the brute force strategy, the best wordle starter word was d
 
 ## Creating a Solver
 
-The Wordle solver drew inspiration from the methods used in finding the optimal starter word; it utilized the process of elimination. From the feedback t
+The Wordle solver drew inspiration from the methods used in finding the optimal starter word; it utilized the process of elimination. From the feedback that Wordle gave the player upon entering the starter word, the player can submit their starter word and those results and the Python script will eliminate words from the word list and display a number of `possible answers`. The player should then pick and enter a word from the `possible answers` list and repeat the steps until they find the mystery word.
 
-
-Logic rules
-- remove word from list if word has `grey letter`
-- remove from list if word does not have `green letter` in the correct position
-- remove from list if word does not have `yellow letter` in any position
-- remove from list if word has `yellow letter` in the same position
+### Logic rules
+- Remove word from list if word has `grey letter`
+- Remove from list if word does not have `green letter` in the correct position
+- Remove from list if word does not have `yellow letter` in any position
+- Remove from list if word has `yellow letter` in the same position
 
 ## Files
 
