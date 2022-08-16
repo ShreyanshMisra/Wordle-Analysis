@@ -4,7 +4,7 @@ An exploratory analysis of the popular word game Wordle in Python using Jupyter 
 
 ## Introduction
 
-Wordle is a web-based word game created by Josh Wardle and recently purchased by the New York Times. The simple word-guessing game has over 300,000 people attemting to guess "today's wordle" each and every day. 
+Wordle is a web-based word game created by Josh Wardle and was recently purchased by the New York Times. The simple word-guessing game has over 300,000 people attemting to guess "today's wordle" each and every day. 
 
 The game is simple. Players need to guess each day's mystery five-letter word, with six tries to get it correct. After guessing a word, the game highlights each of the letters in your guess green, yellow, or grey. Green means that the letter you guessed is both in the mystery word and is in the right position, yellow means that the guessed letter is in the mystery word but in the wrong position, and grey means that your guessed letter is not present in the mystery word. 
 
