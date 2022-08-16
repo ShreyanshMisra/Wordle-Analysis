@@ -60,10 +60,10 @@ The Wordle solver drew inspiration from the methods used in finding the optimal 
 
 
 Logic rules
-- remove from list if word has grey letter
-- remove from list if word goes not have green letter in correct place
-- remove from list if word does not have yellow letter
-- remove from list if word has yellow letter in same place
+- remove word from list if word has `grey letter`
+- remove from list if word does not have `green letter` in the correct position
+- remove from list if word does not have `yellow letter` in any position
+- remove from list if word has `yellow letter` in the same position
 
 ## Files
 
